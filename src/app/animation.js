@@ -3,9 +3,9 @@ function qs(selector, all = false) {
 }
 
 export function setupAnimation() {
-    const sections = document.querySelector('.section', true);
-    const timeline = document.querySelector('.timeline');
-    const line = document.querySelector('.line');
+    const sections = qs('.section', true);
+    const timeline = qs('.timeline');
+    const line = qs('.line');
     line.style.bottom = `calc(100% - 20px)`;
     let prevScrollY = window.scrollY;
     let up, down;

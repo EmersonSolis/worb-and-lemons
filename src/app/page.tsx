@@ -6,13 +6,13 @@ import { setupAnimation } from "./animation.js";
 
 export default function Home() {
     const mainRef = useRef<HTMLDivElement>(null);
-    useEffect(() => {
+    /*useEffect(() => {
         const cleanup = setupAnimation(); // Setup the animation and get the cleanup function
 
         return () => {
         cleanup?.(); // Cleanup on component unmount
         };
-    }, []); // Run only once when the component is mounted
+    }, []); // Run only once when the component is mounted*/
 
   return (
     <main className={styles.main}>
@@ -95,7 +95,7 @@ export default function Home() {
             </div>
         </div>
       </div>
-      <script src="./animation.js" />
+      <script src="./animation.js" defer />
     </main>
   );
 
