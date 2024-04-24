@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import styles from "./style.module.css";
 import { useEffect, useRef } from 'react';
 import { setupAnimation } from "./animation.js";
+import "./style.module.css";
 
 export default function Home() {
     const mainRef = useRef<HTMLDivElement>(null);
@@ -15,21 +15,21 @@ export default function Home() {
     }, []); // Run only once when the component is mounted*/
 
   return (
-    <main className={styles.main}>
-        <div className={styles.container}>
-            <div className={styles.topSection}>
-                <h1 className={styles.tittle}>WORB & LEMONS</h1>
+    <main className="main">
+        <div className="container">
+            <div className="topSection">
+                <h1 className="tittle">WORB & LEMONS</h1>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum nostrum voluptas harum inventore hic et pariatur. Quia nobis repellat, ipsa omnis autem aspernatur dolorem cupiditate beatae dolorum laboriosam esse.
                 </p>
             </div>
         <div>
-            <div className={styles.timeline}>
-                <div className={styles.line}></div>
+            <div className="timeline">
+                <div className="line"></div>
 
-                <div className={styles.section}>
-                    <div className={styles.bead}></div>
-                    <div className={styles.content}>
+                <div className="section">
+                    <div className="bead"></div>
+                    <div className="content">
                         <h2>L</h2>
                         <p>
                             Love for Citrus.
@@ -40,9 +40,9 @@ export default function Home() {
                 </div>
 
 
-                <div className={styles.section}>
-                    <div className={styles.bead}></div>
-                    <div className={styles.content}>
+                <div className="section">
+                    <div className="bead"></div>
+                    <div className="content">
                         <h2>E</h2>
                         <p>
                             Exquisite Flavor.
@@ -53,9 +53,9 @@ export default function Home() {
                 </div>
 
 
-                <div className={styles.section}>
-                    <div className={styles.bead}></div>
-                    <div className={styles.content}>
+                <div className="section">
+                    <div className="bead"></div>
+                    <div className="content">
                         <h2>M</h2>
                         <p>
                             Multiple Uses.
@@ -66,9 +66,9 @@ export default function Home() {
                 </div>
 
 
-                <div className={styles.section}>
-                    <div className={styles.bead}></div>
-                    <div className={styles.content}>
+                <div className="section">
+                    <div className="bead"></div>
+                    <div className="content">
                         <h2>O</h2>
                         <p>
                             Overcoming Bitterness.
@@ -79,9 +79,9 @@ export default function Home() {
                 </div>
 
 
-                <div className={styles.section}>
-                    <div className={styles.bead}></div>
-                    <div className={styles.content}>
+                <div className="section">
+                    <div className="bead"></div>
+                    <div className="content">
                         <h2>N</h2>
                         <p>
                             Natural Refreshment
