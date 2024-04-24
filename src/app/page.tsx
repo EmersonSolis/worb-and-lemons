@@ -6,13 +6,13 @@ import "./style.module.css";
 
 export default function Home() {
     const mainRef = useRef<HTMLDivElement>(null);
-    /*useEffect(() => {
-        const cleanup = setupAnimation(); // Setup the animation and get the cleanup function
+    useEffect(() => {
+        const cleanup = setupAnimation(); 
 
         return () => {
-        cleanup?.(); // Cleanup on component unmount
+        cleanup?.(); 
         };
-    }, []); // Run only once when the component is mounted*/
+    }, []); 
 
   return (
     <main className="main">
@@ -95,7 +95,9 @@ export default function Home() {
             </div>
         </div>
       </div>
-      <script src="./animation.js" defer />
+    
+
+
     </main>
   );
 
