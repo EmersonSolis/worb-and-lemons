@@ -3,9 +3,9 @@ function qs(selector, all = false) {
 }
 
 export function setupAnimation() {
-    const sections = document.querySelectorAll('.section', true);
-    const timeline = document.querySelector('.timeline');
-    const line = document.querySelector('.line');
+    const sections = document.querySelectorAll('.sectionAnim', true);
+    const timeline = document.querySelector('.timelineAnim');
+    const line = document.querySelector('.lineAnim');
     line.style.bottom = `calc(100% - 20px)`;
     let prevScrollY = window.scrollY;
     let up, down;
@@ -49,7 +49,6 @@ export function setupAnimation() {
 
     //scrollHandler();
     line.style.display = 'block';
-    //window.addEventListener('scroll', scrollHandler)
     window.addEventListener('scroll', scrollHandler);
 
     return () => {
